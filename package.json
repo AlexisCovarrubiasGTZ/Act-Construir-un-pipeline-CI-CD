@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
-    "build": "echo Construyendo app... && (if not exist dist mkdir dist) && copy src\\index.js dist\\index.js"
+    "build": "mkdir -p dist && cp src/index.js dist/index.js"
   },
   "devDependencies": {
     "jest": "^29.7.0"
